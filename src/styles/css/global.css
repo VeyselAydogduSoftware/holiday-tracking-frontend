@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #F9FAFB;
+}
+nav {
+    @apply flex w-full items-center justify-center bg-white shadow-md opacity-100 h-14;
+}
+
+nav ul {
+    @apply list-none p-0 m-0 flex justify-center gap-8;
+}
+
+nav ul li {
+    @apply max-w-24 w-full;
+}
+
+nav ul li a {
+    @apply text-sm text-left font-bold no-underline text-gray-500 uppercase;
+}
+
+nav ul li .active {
+    @apply text-sm py-1 px-3 text-left font-bold no-underline bg-gray-300 rounded-sm uppercase;
+    color: #3F3F46;
+
+}
+
+.main-content {
+    @apply container mx-auto px-4 py-6 max-w-5xl;
+}
+
+.text-title{
+    @apply font-normal text-gray-500;
+    font-size: 14px;
+    color: #3F3F46;
+}
+
+.element-radius{
+    border-radius: 4px;
+}
+
+.styled-select{
+    @apply w-full rounded-md border-0 py-1.5 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 sm:text-sm sm:leading-6;
+    height: 40px;
+}
+
+.styled-input{
+    @apply w-full border-0 py-1 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6;
+    height: 40px;
+}
+
+.styled-textarea{
+    @apply w-full border-0 py-1 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6;
+    height: 105px;
+}
+
+.styled-button{
+    @apply px-2 py-1 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2;
+    background-color: #5B21B6;
+    border-radius: 8px;
+    width: 121px;
+    height: 40px;
+}
+.styled-button-disabled{
+    @apply px-2 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-gray-600 disabled:opacity-50;
+    border-radius: 8px;
+    width: 121px;
+    height: 40px;
+}
+
+.styled-outline-button{
+    @apply px-2 py-1 text-sm font-semibold shadow-sm hover:bg-gray-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2;
+    border: #6B7280 1px solid;
+    color: #6B7280;
+    border-radius: 8px;
+    width: 121px;
+    height: 40px;
+}
+
+.styled-button:hover{
+    background-color: #4C1D95;
+}

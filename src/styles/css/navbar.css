@@ -1,0 +1,35 @@
+nav {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 22px #0000000D;
+    opacity: 1;
+    height: 56px;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    max-width: 97px;
+    width: 100%;
+}
+
+nav ul li a {
+    font-size: 16px;
+    text-align: left;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 0px;
+    color: #6B7280;
+    opacity: 1;
+    text-transform: uppercase;
+}
